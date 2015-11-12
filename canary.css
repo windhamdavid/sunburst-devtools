@@ -1,4 +1,4 @@
-f#toolbar > .toolbar-item.toggleable.toggled-on {
+#toolbar > .toolbar-item.toggleable.toggled-on {
   -webkit-transition: border-top 0.25s ease-out 0;
 }
 .tabbed-pane:not(.help-window-main) .tabbed-pane-header-tab.selected,
@@ -219,13 +219,13 @@ span.CodeMirror-selectedtext {
 }
 .CodeMirror-code .CodeMirror-matchingbracket {
   color: #15ca1a !important;
-  text-shadow: 0 0 3px #15ca1a !important;
+  text-shadow: none !important;
   border-bottom: none !important;
   font-weight: 800 !important;
 }
 .CodeMirror-code .CodeMirror-nonmatchingbracket {
   color: #db0404 !important;
-  text-shadow: 0 0 3px #db0404 !important;
+  text-shadow: none !important;
   border-bottom: none !important;
   font-weight: 800 !important;
 }
@@ -553,6 +553,9 @@ button.overrides-swap:not(:disabled):active {
 #search-results-pane-file-based .parent .search-result-matches-count,
 ::shadow #search-results-pane-file-based .parent .search-result-matches-count {
   color: #e47e2e !important;
+}
+.toolbar {
+	flex: 0 0 64px !important;
 }
 .toolbar-search button,
 ::shadow .search-action-button {
@@ -989,7 +992,7 @@ body.dock-to-right:not(.undocked):not(.overlay-contents) {
   color: #EDDFAF !important;
 }
 .console-message .bubble {
-  text-shadow: 0 0 1px rgba(0, 0, 0, 0.8) !important;
+  text-shadow: none !important;
 }
 .console-formatted-node:hover {
   background: rgba(42, 42, 42, 0.5) !important;
@@ -1119,7 +1122,7 @@ body.dock-to-right:not(.undocked):not(.overlay-contents) {
 }
 .resource-timing-view table td .network-timing-bar-title {
   color: #EDDFAF !important;
-  text-shadow: 0 1px 1px #0d0d0d !important;
+  text-shadow: none !important;
 }
 #network-views .request-headers-view .parent {
   background-color: #060606 !important;
@@ -1443,7 +1446,7 @@ input.status-bar-item:focus {
 /**********************************************/
 /*placeholder text when no file is open*/
 .tabbed-pane-placeholder {
-  text-shadow: 0 1px 0 #000000 !important;
+  text-shadow: none !important;
   color: #999999 !important;
 }
 /*-- Save Problem Overlay --*/
@@ -1863,7 +1866,7 @@ li.breakpoint-hit .breakpoint-hit-marker {
 }
 .popover .content .network-timing-bar-title {
   color: #EDDFAF !important;
-  text-shadow: 0 1px 1px #0d0d0d;
+  text-shadow: none #0d0d0d;
 }
 .webkit-line-content .text-editor-overlay-highlight {
   background-color: #424242 !important;
@@ -2203,6 +2206,21 @@ button.glue-async-status-bar-item:active .glyph,
 .toolbar-background button.status-bar-item .glyph,
 .toolbar-background button.status-bar-item .long-click-glyph {
   background-color: #595959 !important;
+}
+.toobar-item {
+	background-color: #595959 !important;
+}
+span.toolbar-counter.toolbar-item {
+	margin: 0px 4px 0px !important;
+}
+.filter-toolbar-item.toolbar-item.toggled-shown {
+	background-color: #595959 !important;
+}
+.filter-toolbar-item.toolbar-item.toggled-shown {
+	background: #595959 !important;
+}
+button.filter-toolbar-item.toggled-shown {
+	background-color: #595959 !important;
 }
 #scripts-debugger-status {
   color: #e78c45 !important;
@@ -2740,7 +2758,7 @@ select.tabbed-pane-header-tabs-drop-down-select {
 .filter-bitset-filter li.selected,
 .filter-bitset-filter li:hover,
 .filter-bitset-filter li:active {
-  text-shadow: 0 0 0 rgba(0, 0, 0, 0) !important;
+  text-shadow: none !important;
   color: #EDDFAF !important;
 }
 .filter-bitset-filter li:hover {
@@ -3225,13 +3243,13 @@ body ::shadow span.CodeMirror-selectedtext {
 }
 body ::shadow .CodeMirror-code .CodeMirror-matchingbracket {
   color: #15ca1a !important;
-  text-shadow: 0 0 3px #15ca1a !important;
+  text-shadow: none !important;
   border-bottom: none !important;
   font-weight: 800 !important;
 }
 body ::shadow .CodeMirror-code .CodeMirror-nonmatchingbracket {
   color: #db0404 !important;
-  text-shadow: 0 0 3px #db0404 !important;
+  text-shadow:none !important;
   border-bottom: none !important;
   font-weight: 800 !important;
 }
@@ -3554,8 +3572,13 @@ body /deep/ .highlighted-search-result {
   border-bottom: 1px solid #000000 !important;
   box-shadow: inset 0 1px 0 #404040 !important;
 }
+.filter-bar {
+  padding: 2px 0;
+  background-color: #0d0d0d !important;
+}
 .filter-bar.hbox {
   padding: 2px 0;
+  background-color: rgba(66, 66, 66, 0.6) !important;
 }
 ::shadow .shadow-split-view.hbox.shadow-split-view-first-is-sidebar > .shadow-split-view-sidebar:not(.maximized) {
   border-right: 2px solid #0d0d0d !important;
