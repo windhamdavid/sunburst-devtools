@@ -4,17 +4,14 @@
   - removed XMLHttpRequest to stable.css
   - fixed error in devtools.js
   - changed line highlighting colors
-  - [Changes Git Repo](https://code.davidawindham.com/david/sunburst-devtools/)
+  - [see changes in git repo](https://code.davidawindham.com/david/sunburst-devtools/)
 	
 ##### 1.0.1
   - spaced .toolbar-counter better
   - removed text shadow    
-  
-  **todo**: 
-  	- remove text shadow from console frame selector element
-  	- remove light background from console filter .toolbar-item.toggled-shown
 
-#####About
+
+##### About
 My old Chrome devtools theme got borked in an update, so I hacked it a bit and decided to finally match it up to nice mellow dark blue, orange, and green one I like to use in vi and Textmate: **Sunburst** by [Soryu](https://github.com/Soryu)
 
 
