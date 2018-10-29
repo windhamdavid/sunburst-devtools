@@ -1,6 +1,15 @@
+##### 1.0.2
+  - (October 2018)
+  - moved custom css to sunburst.css
+  - removed XMLHttpRequest to stable.css
+  - fixed error in devtools.js
+  - changed line highlighting colors
+  - [Changes Git Repo](https://code.davidawindham.com/david/sunburst-devtools/)
+	
 ##### 1.0.1
   - spaced .toolbar-counter better
   - removed text shadow    
+  
   **todo**: 
   	- remove text shadow from console frame selector element
   	- remove light background from console filter .toolbar-item.toggled-shown

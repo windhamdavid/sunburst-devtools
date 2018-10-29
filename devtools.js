@@ -1,10 +1,6 @@
-var xhr = new XMLHttpRequest(),
-	stylesheet = 'stable.css';
-
-if (/Chrome\/(\d\d)/.exec(navigator.userAgent)[1] > 39) {
-	stylesheet = 'canary.css'
-}
-
-xhr.open("GET", "/" + stylesheet, false);
-xhr.send();
-chrome.devtools.panels.applyStyleSheet(xhr.responseText);
+var x = new XMLHttpRequest();
+x.open('GET', 'sunburst.css');
+x.onload = function() {
+    chrome.devtools.panels.applyStyleSheet(x.responseText);
+};
+x.send();
